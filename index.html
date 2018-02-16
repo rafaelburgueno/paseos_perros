@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Paseos Perros | Paseador de perros en La Floresta, Uruguay</title>
+    <link rel="shortcut icon" href="imagenes/icono3.jpg" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="Paseador de perros en la zona de La Floresta, Uruguay. Paseos con variedad de rutas y seguimiento fotográfico en tiempo real a través de redes sociales.">
+    <meta name="keywords" content="paseador de perros, paseos perros, paseosperros, Victor Hugo Guarisco, La Floresta, Canelones, Uruguay, Republica Oriental del Uruguay">
+
+    <meta name="author" content="Rafael Burgueño">
+    <meta name="owner" content="Victor Hugo Guarisco">
+
+    <meta name="robots" content="index, follow">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style type="text/css">
+        body,h4,h5, h6 {font-family: 'Josefin Slab', serif}
+        h1, h2, h3, .fuente1 {font-family: 'Josefin Slab', serif}
+
+        body {font-size:20px}
+
+        .fondo{
+
+            background-image: url(imagenes/fondo6.jpg);
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            /*height: 800px;*/
+        }
+
+        .w3-half img{opacity:0.9}
+        .w3-half img:hover{opacity:1}
+
+        .fondo1, .hover-fondo1:hover{color:#222!important;background-color:#eef8e3!important}
+        .fondo2, .hover-fondo2:hover{color:#222!important;background-color:#B0DC7A!important}
+        .fondo3, .hover-fondo3:hover{color:#222!important;background-color:#7FBD32!important}
+        .fondo4, .hover-fondo4:hover{color:#ccc!important;background-color:#496D1D!important}
+        .fondo5, .hover-fondo5:hover{color:#ccc!important;background-color:#213409!important}
+        .letra1, .hover-letra1:hover{color:#eef8e3}
+        .letra2, .hover-letra2:hover{color:#B0DC7A}
+        .letra3, .hover-letra3:hover{color:#7FBD32}
+        .letra4, .hover-letra4:hover{color:#496D1D}
+        .letra5, .hover-letra5:hover{color:#213409}
+
+        /*.fondo1, .hover-fondo1:hover{color:#222!important;background-color:#E8F3E8!important}
+        .fondo2, .hover-fondo2:hover{color:#222!important;background-color:#92C591!important}
+        .fondo3, .hover-fondo3:hover{color:#ddd!important;background-color:#559E54!important}
+        .fondo4, .hover-fondo4:hover{color:#ddd!important;background-color:#305A30!important}
+        .fondo5, .hover-fondo5:hover{color:#ddd!important;background-color:#0A3409!important}
+        .letra1, .hover-letra1:hover{color:#E8F3E8}
+        .letra2, .hover-letra2:hover{color:#92C591}
+        .letra3, .hover-letra3:hover{color:#559E54}
+        .letra4, .hover-letra4:hover{color:#305A30}
+        .letra5, .hover-letra5:hover{color:#0A3409}*/
+
+        #mapa {
+            height: 200px;
+            width: 300px
+        }
+
+    </style>
+
+    <script src="https://use.fontawesome.com/fcb63acd64.js"></script>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <!--<script type="text/javascript">
+    function initialize() {
+      var marcadores = [
+        ['rambla', -34.763711, -55.670494],
+        ['playa', -34.762698, -55.672736],
+        ['tiburon', -34.764469, -55.663488],
+        ['Miguel Perea', -34.761543, -55.677253],
+        ['vuelos del viento', -34.761455, -55.680161]
+      ];
+      var map = new google.maps.Map(document.getElementById('mapa'), {
+        zoom: 14,
+        center: new google.maps.LatLng(-34.760992, -55.670891),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      var infowindow = new google.maps.InfoWindow();
+      var marker, i;
+      for (i = 0; i < marcadores.length; i++) {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
+          map: map
+        });
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+            infowindow.setContent(marcadores[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>-->
+
+</head>
+<body>
+
+<!--fondo-->
+    <div class="fondo">
+
+<!-- Sidebar/menu -->
+    <nav class="w3-animate-left w3-card-4 w3-sidebar fondo3 w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:230px;font-weight:bold;" id="mySidebar">
+        <br>
+        <div><a href="javascript:void(0)" onclick="w3_close()" class="w3-xlarge w3-button w3-hide-large w3-display-topleft hover-fondo2" style="width:100%"><i class="letra5 w3-large fa fa-bars" aria-hidden="true"></i></a></div>
+
+        <hr>
+        <div class="w3-container w3-center">
+            <a href="#" onclick="w3_close()" class="w3-bar-item w3-button hover-fondo2"><h3 class="w3-xxlarge w3-padding-16 fuente1 w3-wide"><b>Paseos<br>Perros</b></h3></a>
+        </div>
+        <hr>
+        <div class="w3-bar-block w3-center w3-xlarge">
+            <a href="#pregaleria" onclick="w3_close()" class="w3-bar-item w3-button hover-fondo2">Galería  <i class="letra5 w3-large fa fa-camera-retro" aria-hidden="true"></i></a>
+
+            <a href="#preservicios" onclick="w3_close()" class="w3-bar-item w3-button hover-fondo2">Servicios  <i class="letra5 w3-large fa fa-briefcase" aria-hidden="true"></i></a>
+
+            <a href="#prerutas" onclick="w3_close()" class="w3-bar-item w3-button hover-fondo2">Rutas  <i class="letra5 w3-large fa fa-map-marker" aria-hidden="true"></i></a>
+
+            <a href="#precontacto" onclick="w3_close()" class="w3-bar-item w3-button hover-fondo2">Contacto  <i class="letra5 w3-large fa fa-comments-o" aria-hidden="true"></i></a>
+
+        </div>
+    </nav>
+
+    <!-- Top menu -->
+    <header class="w3-card-4 w3-container w3-top w3-hide-large fondo3 w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button fondo3 hover-fondo2 w3-margin-right" onclick="w3_open()"><i class="letra5 w3-large fa fa-bars" aria-hidden="true"></i></a>
+        <span class="fuente1 w3-wide"><b><a href="#" class="hover-fondo3" style="text-decoration:none">Paseos Perros</a></b></span>
+        <img src="imagenes/icono.svg" style="height:50px" class="w3-right w3-hide-small" alt="icono">
+    </header>
+
+
+<!-- oscurece la pagina cuando se abre el side menu, solo en pantallas small -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- CONTENTENIDO -->
+        <div class="w3-main" style="margin-left:340px;margin-right:40px;margin-top: -11px;">
+        <!--colocar aca arriba un margin-top:10px para que no quede una franja blanca -->
+
+
+<!-- Header -->
+        <!--padding-top:80px-->
+            <div class="w3container"  id="showcase" style="padding:80px 30px 0px 30px">
+                <h1 class="w3-jumbo letra5 w3-wide"><b>Paseos Perros</b></h1>
+                <h2 class="letra5"><b>· servicio de recreación y cuidado de animales ·</b></h2>
+                <hr style="border:2px solid" id="pregaleria" class="w3-round letra1">
+            </div>
+
+
+<!-- Photo grid (modal) -->
+            <section class="w3-container" style="margin-top:75px; padding:0px 30px">
+
+                <div class="w3-bar" id="galeria">
+                    <h2 class="w3-bar-item w3-xxxlarge letra5"><b>Galería.</b></h2>
+                    <i class="w3-bar-item letra5 w3-xxlarge fa fa-camera-retro" aria-hidden="true"></i>
+                </div>
+
+                <hr style="width:100px;border:2px solid" class="w3-round letra1">
+
+                <div class="w3-row-padding">
+                    <div class="w3-half">
+                        <img class="w3-border w3-card-2 w3-margin-bottom" src="imagenes/juegos en la playa.jpg" style="padding:2px; width:100%" onclick="onClick(this)" alt="juegos en la playa">
+                        <img class="w3-border w3-card-2 w3-margin-bottom" src="imagenes/paseos por la playa.jpg" style="padding:2px; width:100%" onclick="onClick(this)" alt="paseos por la playa">
+                        <img class="w3-border w3-card-2 w3-margin-bottom" src="imagenes/descansos en el monumento a Miguel Perea.jpg" style="padding:2px; width:100%" onclick="onClick(this)" alt="descansos en el monumento a Miguel Perea">
+                        <img class="w3-border w3-card-2 w3-margin-bottom" src="imagenes/selfie.jpg" style="padding:2px; width:100%" onclick="onClick(this)" alt="selfie">
+                    </div>
+
+                    <div class="w3-half">
+                        <img class="w3-border w3-card-2 w3-margin-bottom" src="imagenes/descansando y tomando sol.jpg" style="padding:2px; width:100%" onclick="onClick(this)" alt="descansando y tomando sol">
+                        <img class="w3-border w3-card-2 w3-margin-bottom" src="imagenes/perros felices.jpg" style="padding:2px; width:100%" onclick="onClick(this)" alt="perros felices">
+                        <img class="w3-border w3-card-2 w3-margin-bottom" src="imagenes/compartiendo.jpg" style="padding:2px; width:100%" onclick="onClick(this)" alt="compartiendo">
+                        <img class="w3-border w3-card-2 w3-margin-bottom" src="imagenes/explorando.jpg" style="padding:2px; width:100%" onclick="onClick(this)" alt="explorando">
+                        <img class="w3-border w3-card-2 w3-margin-bottom" src="imagenes/posando para las fotos.jpg" style="padding:2px; width:100%" onclick="onClick(this)" alt="posando para las fotos">
+                    </div>
+                </div><!-- fin del row -->
+                <hr style="border:1px solid" id="preservicios" class="letra3">
+            </section>
+
+
+<!-- Modal for full size images on click-->
+            <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+                <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                    <img id="img01" class="w3-image" alt="espacio para cargar img">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!--fin fondo-->
+
+<!--fondo-->
+    <div class="fondo">
+        <!-- CONTENTENIDO -->
+        <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+            <!-- Servicios -->
+            <section class="w3-container" style="padding:0px 30px">
+
+                <div class="w3-bar" style="margin-top:75px">
+                    <h2 class="w3-bar-item w3-xxxlarge letra5"><b>Servicios.</b></h2>
+                    <i class="w3-bar-item letra5 w3-xxlarge fa fa-briefcase" aria-hidden="true"></i>
+                </div>
+
+                <hr style="width:100px;border:2px solid" class="w3-round letra1">
+
+                <p class="w3-justify">Brindamos servicio de recreación y cuidado de animales en la zona de La Floresta.</p>
+
+                <div class="w3-row-padding">
+                    <div class="w3-half">
+                        <div class="w3-card-4 w3-center fondo1 w3-margin-bottom">
+                            <header class="w3-container fondo4">
+                                <h3 class="w3-xlarge"><b>Plan básico</b></h3>
+                            </header>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                1 hora diaria
+                            </div>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                seguimiento fotográfico por redes o mensajes privados
+                            </div>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                servicio adicional de portaretratos a bajo costo
+                            </div>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                disponible de lunes a sábado
+                            </div>
+                            <footer class="w3-container fondo3">
+                                <h3><b>$ 100</b></h3>
+                                <span class="w3-opacity-min">por perro</span>
+                            </footer>
+                        </div><!--card-->
+                    </div><!--half-->
+
+                    <div class="w3-half">
+                        <div class="w3-card-4 w3-center fondo1 w3-margin-bottom">
+                            <header class="w3-container fondo4">
+                                <h3 class="w3-xlarge"><b>Plan mensual</b></h3>
+                            </header>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                1 hora diaria
+                            </div>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                6 días por semana de lunes a sábado
+                            </div>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                seguimiento fotográfico por redes o mensajes privados
+                            </div>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                servicio adicional de portaretratos a bajo costo
+                            </div>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                descuentos respecto al plan básico
+                            </div>
+                            <div class="w3-container w3-border-bottom w3-padding-16">
+                                descuentos adicionales por mas perros
+                            </div>
+                            <footer class="w3-container fondo3">
+                                <!--<h3><b>$ - - - -</b></h3>-->
+                                <h3 class="w3-opacity-min">aun no disponible</h3>
+                            </footer>
+                        </div><!--card-->
+                    </div><!--half-->
+
+                </div><!--fin del row-->
+                <hr style="border:1px solid" id="prerutas" class="letra3">
+            </section><!--Servicios-->
+
+            <!-- rutas -->
+            <section class="w3-container" id="rutas" style="margin-top:75px; padding:0px 30px">
+                <div class="w3-bar">
+                    <h2 class="w3-bar-item w3-xxxlarge letra4"><b>Rutas.</b></h2>
+                    <i class="w3-bar-item letra4 w3-xxlarge fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+
+                <hr style="width:100px;border:2px solid" class="w3-round letra3">
+
+                <p class="w3-justify">Las rutas de los paseos son muy variadas, a lo largo de la rambla de Floresta o por la playa fuera de temporada de baños. Los parques de recreación y descanso son por ejemplo, el parque del Club Tiburón, el monumento a Miguel Perea frente al hotel Floresta, en el mirador donde se encuentra la escultura de "los vuelos del viento", entre otros.</p>
+                <p class="w3-justify">Por supuesto que todas las salidas y actividades pueden seguirse por las redes sociales o por mensajes privados a través de whatsapp.</p>
+
+                <div class="fondo1 w3-card-4" id="mapa">
+                    <img src="imagenes/mapa.png" alt="mapa-img" style="width:100%">
+                </div>
+
+                <hr style="border:1px solid" id="precontacto" class="letra3">
+            </section><!--rutas-->
+
+        </div>
+    </div><!--fin fondo-->
+
+
+<!--fondo-->
+    <div class="fondo">
+
+        <!-- CONTENTENIDO -->
+        <div class="w3-main" style="margin-left:340px; margin-right:40px; padding:0px 30px">
+
+            <!-- Contacto -->
+            <section class="w3-container" id="contacto">
+                    <div class="w3-bar" style="margin-top:75px">
+                        <h2 class="w3-bar-item w3-xxxlarge letra5"><b>Contacto.</b></h2>
+                        <i class="w3-bar-item letra5 w3-xxlarge fa fa-comments-o" aria-hidden="true"></i>
+                    </div>
+
+
+                    <hr style="width:100px;border:2px solid" class="w3-round letra1">
+
+
+                    <p class="w3-justify">Por medio de whatsapp o a través de cualquiera de las redes sociales podes comunicarte conmigo, seguir mis actividades o consultar lo que sea, estaré encantado de responder.</p>
+
+                    <div class="w3-row-padding">
+
+                        <a href="https://api.whatsapp.com/send?phone=59898037912" target="_blank"><i class="w3-col s3 w3-center letra5 w3-xxlarge fa fa-whatsapp" aria-hidden="true"></i></a>
+
+                        <a href="https://www.facebook.com/paseos.perros.543" target="_blank"><i class="w3-col s3 w3-center letra5 w3-xxlarge fa fa-facebook" aria-hidden="true"></i></a>
+
+                        <a href="https://www.instagram.com/parmadomus/" target="_blank"><i class="w3-col s3 w3-center letra5 w3-xxlarge fa fa-instagram" aria-hidden="true"></i></a>
+
+                        <a href="mailto:chapu_uy@hotmail.com "><i class="w3-col s3 w3-center letra5 w3-xxlarge fa fa-envelope-o" aria-hidden="true"></i></a>
+
+                    </div>
+
+                    <hr style="border:1px solid" class="letra1">
+            </section>
+
+
+        </div><!-- End page content -->
+
+    <!-- footer -->
+        <footer class="fondo4 w3-container w3-padding-32 w3-medium" style="margin-top:75px;padding-right:58px">
+            <p class="w3-right">sitio web creado por <a href="https://www.instagram.com/rafa.burg/" title="Rafael Burgueño Rocha" target="_blank" class="w3-hover-opacity">.:RBR:.</a>
+            </p>
+
+        <!--<div class="w3-panel w3-tiny w3-right">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <a href="http://www.freepik.com">Designed by Harryarts / Freepik</a>-->
+
+       </footer>
+
+    </div><!--fin fondo-->
+
+
+<script>
+
+
+    function initialize() {
+      var marcadores = [
+        ['rambla', -34.763711, -55.670494],
+        ['playa', -34.762698, -55.672736],
+        ['tiburon', -34.764469, -55.663488],
+        ['Miguel Perea', -34.761543, -55.677253],
+        ['vuelos del viento', -34.761455, -55.680161]
+      ];
+      var map = new google.maps.Map(document.getElementById('mapa'), {
+        zoom: 14,
+        center: new google.maps.LatLng(-34.760992, -55.670891),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      var infowindow = new google.maps.InfoWindow();
+      var marker, i;
+      for (i = 0; i < marcadores.length; i++) {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
+          map: map
+        });
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+            infowindow.setContent(marcadores[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+
+	// Script to open and close sidebar
+	function w3_open() {
+		document.getElementById("mySidebar").style.display = "block";
+		document.getElementById("myOverlay").style.display = "block";
+	}
+
+	function w3_close() {
+		document.getElementById("mySidebar").style.display = "none";
+		document.getElementById("myOverlay").style.display = "none";
+	}
+
+	// Modal Image Gallery
+	function onClick(element) {
+	  document.getElementById("img01").src = element.src;
+	  document.getElementById("modal01").style.display = "block";
+	  var captionText = document.getElementById("caption");
+	  captionText.innerHTML = element.alt;
+	}
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109170184-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109170184-1');
+</script>
+
+
+</body>
+</html>
